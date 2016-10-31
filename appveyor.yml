@@ -8,7 +8,6 @@ nuget:
 branches:
   only:
   - master
-  - dev
 
 pull_requests:
   do_not_increment_build_number: true
@@ -23,7 +22,7 @@ build_script:
 - cmd: dotnet build src/Hangfire.Dashboard.Dark -c Release
 
 after_build:
-- cmd: dotnet pack src/HangfireHangfire.Dashboard.Dark -o artifacts -c Release
+- cmd: dotnet pack src/Hangfire.Dashboard.Dark -o artifacts -c Release
 
 artifacts:
 - path: 'artifacts/**/*.nupkg'
