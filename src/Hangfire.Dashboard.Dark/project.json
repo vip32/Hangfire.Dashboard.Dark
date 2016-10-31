@@ -7,7 +7,7 @@
 
   "packOptions": {
     "summary": "Dark themed dashboard for Hangfire",
-    "tags": [ "hangfire", "dark", "theme" ],
+    "tags": [ "hangfire", "dark", "theme", "dashboard" ],
     "owners": [ "Vincent van Proosdij" ],
     "releaseNotes": "",
     "repository": {
