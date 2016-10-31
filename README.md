@@ -9,6 +9,9 @@ Hangfire.Dashboard.Dark shows the hangfire dashboard in a beautiful dark theme.
 
  - [Darkly](http://bootswatch.com/darkly/)
 
+
+![dashboard](dashboard1.png)
+
 ## Setup
 
 In .NET Core's Startup.cs:
@@ -29,3 +32,5 @@ GlobalConfiguration.Configuration
     ...
     .UseDarkDashboard();
 ```
+
+![dashboard](dashboard2.png)
