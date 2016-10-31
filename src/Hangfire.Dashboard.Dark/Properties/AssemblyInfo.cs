@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Hangfire.Console")]
+[assembly: AssemblyProduct("Hangfire.Dashboard.Dark")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -18,5 +18,4 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("c18cbfcc-955b-4b21-b698-851cc56364af")]
 
-[assembly: InternalsVisibleTo("Hangfire.Console.Tests")]
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
