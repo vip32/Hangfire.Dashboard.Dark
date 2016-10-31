@@ -10,7 +10,7 @@ namespace Hangfire.Dashboard.Dark
     public static class GlobalConfigurationExtensions
     {
         /// <summary>
-        /// Configures Hangfire to use Console.
+        /// Configures Hangfire to use the dark dashboard theme
         /// </summary>
         /// <param name="configuration">Global configuration</param>
         public static IGlobalConfiguration UseDarkDashboard(this IGlobalConfiguration configuration)
