@@ -1,9 +1,8 @@
-﻿using Hangfire.Dashboard;
-using Hangfire.Dashboard.Extensions;
+﻿using Hangfire.Dashboard.Extensions;
 using System;
 using System.Reflection;
 
-namespace Hangfire.Console
+namespace Hangfire.Dashboard.Dark
 {
     /// <summary>
     /// Provides extension methods to setup Hangfire.Dashboard.Dark
@@ -21,7 +20,7 @@ namespace Hangfire.Console
 
             // register dispatchers for CSS
             var assembly = typeof(GlobalConfigurationExtensions).GetTypeInfo().Assembly;
-            DashboardRoutes.Routes.Append("/css[0-9]{3}", new EmbeddedResourceDispatcher(assembly, "Hangfire.Console.Resources.style.css"));
+            DashboardRoutes.Routes.Append("/css[0-9]{3}", new EmbeddedResourceDispatcher(assembly, "Hangfire.Dashboard.Dark.Resources.style.css"));
 
             return configuration;
         }
