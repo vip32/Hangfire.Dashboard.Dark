@@ -1,14 +1,14 @@
 ﻿{
-  "version": "1.0.2-*",
+  "version": "1.0.3-*",
 
   "title": "Hangfire.Dashboard.Dark",
   "description": "Dark themed dashboard for Hangfire",
-  "authors": [ "Vincent van Proosdij" ],
+  "authors": [ "vip32" ],
 
   "packOptions": {
     "summary": "Dark themed dashboard for Hangfire",
     "tags": [ "hangfire", "dark", "theme", "dashboard" ],
-    "owners": [ "Vincent van Proosdij" ],
+    "owners": [ "vip32" ],
     "releaseNotes": "",
     "repository": {
       "type": "git",
