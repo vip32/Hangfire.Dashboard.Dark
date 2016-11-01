@@ -12,6 +12,7 @@
 
 body {
     background-color: black; /* VP */
+    color:lightgray;
 }
 
 .table>tbody>tr.hover:hover>td, .table>tbody>tr.hover:hover>th {
@@ -135,4 +136,5 @@ button.btn.btn-sm.btn-default:hover{
 
 span.metric.metric-default {
     color: #0CE3AC;
+    border-color: #0CE3AC;
 }
