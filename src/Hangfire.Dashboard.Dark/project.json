@@ -1,32 +1,29 @@
 ﻿{
-  "version": "1.0.3-*",
-
+  "version": "1.0.4-*",
   "title": "Hangfire.Dashboard.Dark",
   "description": "Dark themed dashboard for Hangfire",
   "authors": [ "vip32" ],
-
   "packOptions": {
-    "summary": "Dark themed dashboard for Hangfire",
     "tags": [ "hangfire", "dark", "theme", "dashboard" ],
+    "summary": "Dark themed dashboard for Hangfire",
     "owners": [ "vip32" ],
     "releaseNotes": "",
+    "projectUrl": "https://www.nuget.org/packages/Hangfire.Dashboard.Dark/",
+    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
     "repository": {
       "type": "git",
       "url": "https://github.com/vip32/Hangfire.Dashboard.Dark"
     }
   },
-
   "buildOptions": {
     "warningsAsErrors": true,
     "xmlDoc": true,
 
     "embed": [ "Resources/*" ]
   },
-
   "dependencies": {
     "Hangfire.Core": "1.6.0"
   },
-
   "frameworks": {
     "netstandard1.3": {},
     "net45": {}
