@@ -8,7 +8,7 @@
     "summary": "Dark themed dashboard for Hangfire",
     "owners": [ "vip32" ],
     "releaseNotes": "",
-    "projectUrl": "https://www.nuget.org/packages/Hangfire.Dashboard.Dark/",
+    "projectUrl": "https://github.com/vip32/Hangfire.Dashboard.Dark",
     "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
     "repository": {
       "type": "git",
