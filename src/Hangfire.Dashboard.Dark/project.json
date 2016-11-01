@@ -18,7 +18,6 @@
   "buildOptions": {
     "warningsAsErrors": true,
     "xmlDoc": true,
-
     "embed": [ "Resources/*" ]
   },
   "dependencies": {
