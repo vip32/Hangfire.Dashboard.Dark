@@ -20,7 +20,7 @@ namespace Hangfire.Dashboard.Dark
 
             // register dispatchers for CSS
             var assembly = typeof(GlobalConfigurationExtensions).GetTypeInfo().Assembly;
-            DashboardRoutes.Routes.Append("/css[0-9]{3}", new EmbeddedResourceDispatcher(assembly, "Hangfire.Dashboard.Dark.Resources.style.min.css"));
+            DashboardRoutes.Routes.Append("/css[0-9]+", new EmbeddedResourceDispatcher(assembly, "Hangfire.Dashboard.Dark.Resources.style.min.css"));
 
             return configuration;
         }

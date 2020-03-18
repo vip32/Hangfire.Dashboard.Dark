@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>Dark themed dashboard for Hangfire</Description>
@@ -12,16 +12,18 @@
     <PackageId>Hangfire.Dashboard.Dark</PackageId>
     <PackageTags>hangfire;dark;theme;dashboard</PackageTags>
     <PackageProjectUrl>https://github.com/vip32/Hangfire.Dashboard.Dark</PackageProjectUrl>
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/vip32/Hangfire.Dashboard.Dark</RepositoryUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <Version>1.1.0</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Resources\*" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+    <EmbeddedResource Include="Resources\*" Exclude="bin\**;obj\**;**\*.csproj;packages\**;@(EmbeddedResource)" />
   </ItemGroup>
 
   <ItemGroup>
