@@ -28,6 +28,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: NuGetAuthenticate@0
+  inputs:
+    nuGetServiceConnections: 'nuget hangfire.dashboard.dark'
+
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
@@ -39,4 +43,5 @@ steps:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     feedsToUse: 'config'
+    nugetConfigPath: 'nuget.config'
     includeNugetOrg: 'true'
