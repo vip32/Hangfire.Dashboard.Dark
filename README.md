@@ -1,6 +1,6 @@
 # Hangfire.Dashboard.Dark
 
-![Build status](https://ci.appveyor.com/api/projects/status/b57hb7438d7dvxa2/branch/master?svg=true&passingText=master%20%u2714)
+[![Build Status](https://vip32.visualstudio.com/Hangfire.Dashboard.Dark/_apis/build/status/vip32.Hangfire.Dashboard.Dark?branchName=master)](https://vip32.visualstudio.com/Hangfire.Dashboard.Dark/_build/latest?definitionId=6&branchName=master)
 [![NuGet](https://img.shields.io/nuget/v/Hangfire.Dashboard.Dark.svg)](https://www.nuget.org/packages/Hangfire.Dashboard.Dark/)
 
 Hangfire.Dashboard.Dark shows the hangfire dashboard in a beautiful dark theme. 
