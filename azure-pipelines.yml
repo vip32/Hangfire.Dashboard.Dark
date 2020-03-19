@@ -18,25 +18,33 @@ steps:
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
+  displayName: nuget restore
   inputs:
     restoreSolution: '$(solution)'
 
 - task: VSBuild@1
+  displayName: build
   inputs:
     solution: '$(solution)'
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+# - task: NuGetAuthenticate@0
+#   inputs:
+#     nuGetServiceConnections: 'nuget hangfire.dashboard.dark'
+
 - task: NuGetCommand@2
+  displayName: nuget pack
   inputs:
     command: 'pack'
     packagesToPack: '**/*.csproj'
     versioningScheme: 'off'
 
 - task: NuGetCommand@2
+  displayName: nuget push
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    feedsToUse: 'config'
-    includeNugetOrg: 'true'
+    nuGetFeedType: 'external'
+    publishFeedCredentials: 'nuget hangfire.dashboard.dark' # service connection name
